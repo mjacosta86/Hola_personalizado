@@ -68,11 +68,11 @@ public class MainActivity extends ActionBarActivity
                     salutation += " " + dateToShow;
                 }
 
-                /*TextView out = (TextView)findViewById(R.id.out);
-                out.setText(salutation);*/
-                Intent intent = new Intent(MainActivity.this, Salutation.class);
+                TextView out = (TextView)findViewById(R.id.out);
+                out.setText(salutation);
+                /*Intent intent = new Intent(MainActivity.this, Salutation.class);
                 intent.putExtra("salutation", salutation);
-                startActivity(intent);
+                startActivity(intent);*/
 
             }
         });
